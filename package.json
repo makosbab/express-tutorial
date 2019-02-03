@@ -1,0 +1,16 @@
+{
+  "name": "express-tutorial",
+  "version": "1.0.0",
+  "description": "Simple customer management app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.6.1",
+    "express": "*"
+  },
+  "author": "Róbert Tóth",
+  "license": "ISC"
+}
