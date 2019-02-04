@@ -9,7 +9,9 @@
   "dependencies": {
     "body-parser": "*",
     "ejs": "^2.6.1",
-    "express": "*"
+    "express": "*",
+    "express-validator": "^5.3.1",
+    "mongojs": "^2.6.0"
   },
   "author": "Róbert Tóth",
   "license": "ISC"

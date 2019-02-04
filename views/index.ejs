@@ -1,3 +1,22 @@
-<h1>
-    <%=title %>
-</h1>
+<% include partials/header %>
+    <h1><%=title %></h1>
+    <h1>Add customer</h1>
+    <!-- Action is the route we submit to-->
+
+    <!-- Check for form errors-->
+    <% if(errors != undefined){ %>
+        <% errors.forEach(function(error){ %>
+            <p><%=error.msg%></p>
+        <%})%>
+    <% } %>
+    <form method="POST" action="/users/add">
+        <input type="text" name="first_name"> <br>
+        <input type="text" name="last_name"> <br>
+        <input type="text" name="email"> <br>
+        <input type="submit" value="Submit">
+    </form>
+    <% users.forEach(function(user){ %>
+        <p><%=user.last_name%></p>
+    <%})%>
+    
+<% include partials/footer %>
